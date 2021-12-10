@@ -1,5 +1,4 @@
 import { Event, ShapeAttrs } from '@antv/g-canvas';
-import { Padding } from '../interface/theme';
 import { S2CellType } from './interaction';
 import { DataItem, S2DataConfig } from './s2DataConfig';
 import { CustomTreeItem, ResizeInfo } from '@/common/interface';
@@ -295,6 +294,7 @@ export interface MergedCellInfo {
 export type TempMergedCell = {
   cells: S2CellType[];
   viewMeta: ViewMeta;
+  isPartiallyVisible?: boolean;
 };
 
 export type FilterDataItemCallback = (
